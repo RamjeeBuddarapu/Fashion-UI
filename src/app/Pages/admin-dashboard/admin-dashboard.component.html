@@ -1,0 +1,31 @@
+<div class="container-fluid" id="main">
+    <div class="row row-offcanvas row-offcanvas-left">
+        <div class="col-md-3 col-lg-2 sidebar-offcanvas bg-light pl-0" id="sidebar" role="navigation">
+            <ul class="nav flex-column sticky-top pl-0 pt-5 mt-3">
+                <h4>Admin Dashboard</h4>
+                <li class="nav-item"><a class="nav-link">getallusers</a></li>
+                <li class="nav-item"><a class="nav-link" [routerLink]="'getall'">Get All</a>
+                <li class="nav-item"><a class="nav-link">getallproducts</a></li>
+                <li class="nav-item"><a class="nav-link">getallbrands</a></li>
+                <li class="nav-item"><a class="nav-link">getallorders</a></li>
+
+                <li class="nav-item"><a class="nav-link" [routerLink]="'getall'">Get All</a>
+                </li>
+                <li class="nav-item"><a class="nav-link">Search</a></li>
+                <li class="nav-item"><a class="nav-link">Templates</a></li>
+                <li class="nav-item"><a class="nav-link" [routerLink]="'login'">LogOut</a></li>
+
+
+            </ul>
+        </div>
+        <!--/col-->
+
+        <div class="col main pt-5 mt-3">
+            <router-outlet></router-outlet>
+
+        </div>
+        <!--/main col-->
+    </div>
+
+</div>
+

@@ -1,0 +1,37 @@
+<div class="container">
+    <table class="table">
+        <tr>
+            <td>productId</td>
+            <td>
+                <input type="number" [(ngModel)]="products.productId">
+            </td>
+        </tr>
+        <tr>
+            <td>productName</td>
+            <td>
+                <input type="text" [(ngModel)]="products.productName">
+            </td>
+        </tr>
+        <tr>
+            <td>price</td>
+            <td>
+                <input type="number" [(ngModel)]="products.price">
+            </td>
+        </tr>
+        <tr>
+            <td>brand</td>
+            <td>
+                <input type="text" [(ngModel)]="products.brand">
+            </td>
+        </tr>
+    
+        <tr>
+            <td colspan="2">
+                <button (click)="addProduct()">Add</button>
+            </td>
+        </tr>
+
+    </table>
+</div>
+
+

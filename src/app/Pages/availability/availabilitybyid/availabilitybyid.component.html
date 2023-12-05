@@ -1,0 +1,43 @@
+<div class="container">
+    <table class="table" style="width: 500px;">
+        <tr>
+            <td>
+                <label>availabilityId</label>
+            </td>
+            <td>
+                <input type="number" [(ngModel)]="availabilityId" class="form-control">
+            </td>
+            <td>
+                <button class="btn btn-primary" (click)="search()">Search</button>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="3">
+                <span style="color: red;">{{errMsg}}</span>
+            </td>
+        </tr>
+    </table>
+    <hr>
+    <table class="table" *ngIf="isavailabilityExist">
+        <tr>
+            <td>availabilityId</td>
+            <td>
+                <input type="number" [(ngModel)]="availability.availabilityId" readonly class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td>quantity</td>
+            <td>
+                <input type="text" [(ngModel)]="availability.quantity" readonly class="form-control">
+            </td>
+        </tr>
+        <tr>
+            <td>product</td>
+            <td>
+                <input type="text" [(ngModel)]="availability.product" class="form-control">
+            </td>
+        </tr>
+
+    </table>
+</div>
+
